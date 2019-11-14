@@ -1,6 +1,11 @@
-﻿namespace BotNet_Control
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace BotNet_Control
 {
-    class configs
+    static class configs
     {
         public static string server { get; set; }
         public static string server_title { get; set; }

@@ -44,7 +44,7 @@ namespace BotNet_Control
 
             if (result_array[0] == "ok:true")
             {
-                for(int i = 0; i < result_array.Length; i++)
+                for (int i = 0; i < result_array.Length; i++)
                 {
                     if (result_array[i].Contains("access_token"))
                     {
@@ -105,7 +105,7 @@ namespace BotNet_Control
                     if (result_array[i].Contains("path"))
                     {
                         string[] tmp_array = result_array[i].Split(':');
-                        create_page = tmp_array[tmp_array.Length - 1];
+                        created_page = tmp_array[tmp_array.Length - 1];
 
                       break;
                     }

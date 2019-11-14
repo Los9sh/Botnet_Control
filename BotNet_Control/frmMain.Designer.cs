@@ -103,7 +103,6 @@
             // 
             // button_save
             // 
-            this.button_save.Enabled = false;
             this.button_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button_save.Location = new System.Drawing.Point(26, 160);
             this.button_save.Name = "button_save";
@@ -206,6 +205,7 @@
             this.button_refresh.TabIndex = 2;
             this.button_refresh.Text = "Обновить список";
             this.button_refresh.UseVisualStyleBackColor = true;
+            this.button_refresh.Click += new System.EventHandler(this.button_refresh_Click);
             // 
             // listBox1
             // 
@@ -216,6 +216,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(395, 204);
             this.listBox1.TabIndex = 10;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // textBox_selected_server
             // 
@@ -256,6 +257,7 @@
             this.button_page_create.TabIndex = 2;
             this.button_page_create.Text = "Создать";
             this.button_page_create.UseVisualStyleBackColor = true;
+            this.button_page_create.Click += new System.EventHandler(this.button_page_create_Click);
             // 
             // label3
             // 
@@ -296,6 +298,7 @@
             this.button_send.TabIndex = 2;
             this.button_send.Text = "Обновить";
             this.button_send.UseVisualStyleBackColor = true;
+            this.button_send.Click += new System.EventHandler(this.button_send_Click);
             // 
             // textBox_cmd
             // 
@@ -347,6 +350,7 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Control Panel BotNet";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
